@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<body style="background-color: bisque;">
+	<h1 align="center" style="color: rosybrown; margin-top: 10px;">Time Converter</h1>
+	<h2 align="center" style="color: rosybrown;">Convert Seconds, Minutes, Hours, and Days!</h2>
+	<hr>
+<div class="container-fluid col-md-6 bg-info">
+	<h2>Seconds</h2>
+	Input amount : <input type="text" id="operandOne" placeholder="Input">
+	<hr>
+<button onclick="multiply1()" style="background-color: cyan; color: darkblue;">
+	<h5>Seconds To Minutes</h5>
+</button>
+<button onclick="multiply2()" style="background-color: cyan; color: darkblue;">
+<h5>Seconds To Hours</h5>
+</button>
+<button onclick="multiply3()" style="background-color: cyan; color: darkblue;">
+<h5>Seconds To Days</h5>
+</button>
+<script type="text/javascript">
+	let x;
+	let y;
+	let x1;
+	let y1;
+	let x2;
+	let y2;
+	function multiply1(){
+		let x = parseInt(document.getElementById("operandOne").value);
+		let y = 60;
+		alert(x / y)
+	}
+	function multiply2(){
+		let x1 = parseInt(document.getElementById("operandOne").value);
+	    let y1 = 3600;
+		alert(x1 / y1)
+	}
+	function multiply3(){
+		let x2 = parseInt(document.getElementById("operandOne").value);
+	    let y2 = 86400;
+		alert(x2 / y2)
+	}
+</script>
+</div>
+<hr>
+<div class="container-fluid col-md-6 bg-success">
+	<h2>Minutes</h2>
+	Input amount : <input type="text" id="operandtwo" placeholder="Input">
+	<hr>
+<button onclick="multiply4()" style="background-color: palegreen; color: darkolivegreen;">
+<h5>Minutes To Seconds</h5>
+</button>
+<button onclick="divide5()" style="background-color: palegreen; color: darkolivegreen;">
+<h5>Minutes To Hours</h5>
+</button>
+<button onclick="multiply6()" style="background-color: palegreen; color: darkolivegreen;">
+<h5>Minutes To Days</h5>
+</button>
+	<script type="text/javascript">
+	let x3;
+	let y3;
+	let x4;
+	let y4;
+	let x5;
+	let y5;
+	function multiply4(){
+		let x3 = parseInt(document.getElementById("operandtwo").value);
+		let y3 = 60;
+		alert(x3 * y3)
+	}
+	function divide5(){
+		let x4 = parseInt(document.getElementById("operandtwo").value);
+	    let y4 = 60;
+		alert(x4 / y4)
+	}
+	function multiply6(){
+		let x5 = parseInt(document.getElementById("operandtwo").value);
+	    let y5 = 1440;
+		alert(x5 / y5)
+	}
+</script>
+</div>
+<hr>
+<div class="container-fluid col-md-6 bg-warning">
+	<h2>Hours</h2>
+	Input amount : <input type="text" id="operandthree" placeholder="Input">
+	<hr>
+<button onclick="multiply7()"style="background-color: yellow; color: orange;">
+<h5>Hours To Seconds</h5>
+</button>
+<button onclick="multiply8()"style="background-color: yellow; color: orange;">
+<h5>Hours To Minutes</h5>
+</button>
+<button onclick="multiply9()"style="background-color: yellow; color: orange;">
+<h5>Hours To Days</h5>
+</button>
+	<script type="text/javascript">
+	let x6;
+	let y6;
+	let x7;
+	let y7;
+	let x8;
+	let y8;
+	function multiply7(){
+		let x6 = parseInt(document.getElementById("operandthree").value);
+		let y6 = 3600;
+		alert(x6 * y6)
+	}
+	function multiply8(){
+		let x7 = parseInt(document.getElementById("operandthree").value);
+	    let y7 = 60;
+		alert(x7 * y7)
+	}
+	function multiply9(){
+		let x8 = parseInt(document.getElementById("operandthree").value);
+	    let y8 = 24;
+		alert(x8 / y8)
+	}
+	</script>
+</div>
+<hr>
+<div class="container-fluid col-md-6 bg-danger">
+	<h2>Hours</h2>
+	Input amount : <input type="text" id="operandfour" placeholder="Input">
+	<hr>
+<button onclick="multiply10()"style="background-color: indianred; color: darkred;">
+<h5>Days To Seconds</h5>
+</button>
+<button onclick="multiply11()"style="background-color: indianred; color: darkred;">
+<h5>Days To Minutes</h5>
+</button>
+<button onclick="multiply12()"style="background-color: indianred; color: darkred;">
+<h5>Days To Hours</h5>
+</button>
+	<script type="text/javascript">
+	let x9;
+	let y9;
+	let x10;
+	let y10;
+	let x11;
+	let y11;
+	function multiply10(){
+		let x9 = parseInt(document.getElementById("operandfour").value);
+		let y9 = 86400;
+		alert(x9 * y9)
+	}
+	function multiply11(){
+		let x10 = parseInt(document.getElementById("operandfour").value);
+	    let y10= 1440;
+		alert(x10 * y10)
+	}
+	function multiply12(){
+		let x11= parseInt(document.getElementById("operandfour").value);
+	    let y11= 24;
+		alert(x11 * y11)
+	}
+	</script>
+</div>
+<hr>
+</body>
+
+</html>
